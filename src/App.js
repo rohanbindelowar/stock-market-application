@@ -5,10 +5,11 @@ import Search from "./components/Search";
 
 function App() {
   const [name, setName] = useState("IBM");
+  const [dayIntervalData, setDayIntervalData] = useState({})
   return (
     <div className="App">
       <Header />
-      <Search name={name} setName={setName}/>
+      <Search name={name} setName={setName} setDayIntervalData={setDayIntervalData}/>
     </div>
   );
 }
